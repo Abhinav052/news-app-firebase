@@ -1,4 +1,6 @@
 ### Flutter Project Setup :
+
+  - Add .env file in root directory and define the key value NEWS_API_KEY
   - flutter pub get
   - flutter run w/Emulator
 
