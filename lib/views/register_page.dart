@@ -1,13 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:newzbuzz/utils/routes/routes.dart';
 import 'package:newzbuzz/utils/theme/app_pallete.dart';
-import 'package:newzbuzz/viewModel/auth_view_model.dart';
+import 'package:newzbuzz/views/components/AuthButton.dart';
 import 'package:newzbuzz/views/components/custom_snackbar.dart';
-import 'package:provider/provider.dart';
 
 import '../services/auth_service.dart';
 
@@ -42,7 +40,6 @@ class _RegisterPageState extends State<RegisterPage> {
         email: emailController.text.trim(),
         password: passwordController.text.trim());
     res.fold((l) => {snackBarCustom(context, l.message)}, (r) async {
-      // await Provider.of<AuthViewModel>(context, listen: false).login({});
       if (AuthService.checkLoginStatus())
         Navigator.pushNamedAndRemoveUntil(context, Routes.homeScreen, (route) => false);
     });
@@ -122,33 +119,15 @@ class _RegisterPageState extends State<RegisterPage> {
                     const SizedBox(height: 20),
                     Column(
                       children: [
-                        TextButton(
-                          style: TextButton.styleFrom(
-                            backgroundColor: AppPallete.primaryColor,
-                            minimumSize: Size(MediaQuery.of(context).size.width * .5, 0),
-                            padding: EdgeInsets.symmetric(vertical: 12),
-                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-                          ),
-                          onPressed: () {
-                            if (_formKey.currentState!.validate()) {
-                              FocusScope.of(context).unfocus();
-                              submitForm();
-                            }
-                          },
-                          child: isSubmitting
-                              ? const SizedBox(
-                                  height: 20,
-                                  width: 20,
-                                  child: CircularProgressIndicator(
-                                    color: Colors.white,
-                                  ),
-                                )
-                              : Text(
-                                  "Signup",
-                                  style: GoogleFonts.poppins(
-                                      color: AppPallete.surfaceColor, fontWeight: FontWeight.bold),
-                                ),
-                        ),
+                        AuthButton(
+                            onPressed: () {
+                              if (_formKey.currentState!.validate()) {
+                                FocusScope.of(context).unfocus();
+                                submitForm();
+                              }
+                            },
+                            isSubmitting: isSubmitting,
+                            buttonText: "Signup"),
                         const SizedBox(
                           height: 8,
                         ),

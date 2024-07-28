@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:fpdart/fpdart.dart';
 import 'package:http/http.dart' as http;
-import 'package:newzbuzz/utils/service/http_service.dart';
 import '../utils/errors/failure.dart';
 
 class NewsService {

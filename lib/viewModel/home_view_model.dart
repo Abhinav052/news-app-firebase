@@ -9,6 +9,7 @@ class HomeViewModel extends ChangeNotifier {
   List<dynamic> newsList = [];
   String countryCode = '';
   bool error = false;
+
   void setLoading(bool value) {
     isLoading = value;
     notifyListeners();

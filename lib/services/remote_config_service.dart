@@ -8,7 +8,7 @@ class FirebaseRemoteConfigService {
   static Future<void> initialize() async {
     try {
       await _remoteConfig.setDefaults(<String, dynamic>{
-        'countryCode': 'US',
+        'countryCode': 'IN',
       });
 
       await _remoteConfig.setConfigSettings(RemoteConfigSettings(
