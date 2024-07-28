@@ -1,16 +1,31 @@
-# newzbuzz
+### Flutter Project Setup :
+  - flutter pub get
+  - flutter run w/Emulator
 
-A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+Implemented Features:
+  -
 
-A few resources to get you started if this is your first Flutter project:
+  - Registraion & Login Using Firebase email auth
+  - Storing User data in cloud firestore
+  - Added Validation and error handling for api calls
+  - Added news api call w/ filter based on Flutter remote config data
+  - State Management w/ Provider
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Video Walkthrough
+  - 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+https://github.com/user-attachments/assets/4d245aa7-c625-4fb3-b6dd-0d1382214640
+
+
+
+Images
+  -
+![image](https://github.com/user-attachments/assets/cf490ced-6f8f-4137-a813-93eae616e11d)
+
+
+Android APK DRIVE
+  -   
+https://drive.google.com/file/d/1JyG3bL9-hjamYZVkoz_XTYLzajIkW-jq/view?usp=sharing
