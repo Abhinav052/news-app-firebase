@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "142359190691",
+    "project_id": "sma-fl",
+    "storage_bucket": "sma-fl.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142359190691:android:cca79cf1405af1c168f316",
+        "android_client_info": {
+          "package_name": "com.example.newzbuzz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeNRhkYW-fOw5GpyyWbDZD9asxcHnPsOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142359190691:android:e80aff6856eec18368f316",
+        "android_client_info": {
+          "package_name": "com.example.sma"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeNRhkYW-fOw5GpyyWbDZD9asxcHnPsOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
